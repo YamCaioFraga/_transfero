@@ -14,4 +14,23 @@ class Usuário(models.Model):
     data_cadastro = models.DateTimeField(default=timezone.now)
     ativo = models.BooleanField(default=True)
 
-    # foto =
+    def __str__(self):
+        return f'{self.nome}  {self.sobrenome}' 
+
+class Filme(models.Model):
+    nome_do_filme = models.CharField(max_length=50)
+    ano_de_lancamento = models.DateField()
+    estudio = models.CharField(max_length=50)
+    genero = models.CharField(max_length=20)
+    sinopse = models.TextField()
+    data_cadastro = models.DateField(default=timezone.now)
+
+    def __str__(self):
+        return  f"{self.nome_do_filme}"
+
+class Genero(models.Model):
+    nome = models.CharField(max_length=50)
+    data_cadastro = models.DateField(default=timezone.now)
+
+    def __str__(self):
+        return  f"{self.nome}"
