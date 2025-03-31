@@ -13,4 +13,4 @@ class FilmeAdmin(admin.ModelAdmin):
 
 @admin.register(models.Genero)
 class GeneroAdmin(admin.ModelAdmin):
-    list_display = ('nome','data_cadastro',)   
+    list_display = ('id','nome','data_cadastro',)   
