@@ -5,8 +5,7 @@ from sistema import views
 #Informa quals será a rota que irá chamar determinada view(função)
 urlpatterns = [
     path('', views.index),
+    path('listar/', views.listarUsuarios),
+    path('listar/', views.listarFilmes),
 ]
 
-urlpatterns = [
-    path('apresentação/', views.index),
-]

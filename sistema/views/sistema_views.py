@@ -9,8 +9,4 @@ def index(request):
         'sistema/sistema.html',
     )
 
-def indexApresentacao(request):
-    return render(
-        request,
-        'sistema/apresentacao.html',
-    )
+
