@@ -1,14 +1,3 @@
-# from django.urls import path
-# from usuarios import views 
-
-# urlspatterrns = [
-#     path('cadastro/', views.cadastro, name='cadastro'),
-#     path('login/', views.login, name='login'),
-# ]
-
-
-# //urls.py do app usuarios
-
 from django.urls import path
 from usuarios import views
 
