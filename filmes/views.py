@@ -1,14 +1,8 @@
 from django.shortcuts import render, redirect
-
 from filmes.forms import FilmeForm
-
+from sistema.models import Filme
 # Create your views here.
 
-def login(request):
-    return render(
-        request, 
-        'cadastrar.html'
-    )
 
 def cadastrarFilme(request):
     # Verificar se a requisição será do tipo GET ou POST.
@@ -19,13 +13,26 @@ def cadastrarFilme(request):
         # files -> Contém os módulos(arquivos) e ou as imagens.
         if form.is_valid(): # Se os dados forem validos, são salvos no BD. (Validação dos formularios)
             form.save()
-            return redirect('/cadastrarfilme')
+            return redirect('listarfilmes')
 
     else:   
         # Se a requisição for do GET, exibir o formulário de cadastro.
         form = FilmeForm()
     return render(
         request,
-        'cadastrar.html',
-        {'form': form} 
+        'filmes/cadastrar.html',
+        {'form': form}, 
+    )
+
+def listarFilmes(request):
+    filmes = Filme.objects.all()
+
+    context = {
+        'filmes': filmes 
+    }
+
+    return render(
+        request,
+        'filmes/listar.html',
+        context,
     )
