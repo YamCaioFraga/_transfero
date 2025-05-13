@@ -7,7 +7,7 @@ from usuarios.forms import UsuarioForm
 def login(request):
     return render(
         request, 
-        'login.html'
+        'usuario/login.html'
     )
 
 def criarUsuario(request):
@@ -19,14 +19,14 @@ def criarUsuario(request):
         # files -> Contém os módulos(arquivos) e ou as imagens.
         if form.is_valid(): # Se os dados forem validos, são salvos no BD. (Validação dos formularios)
             form.save()
-            return redirect('/usuario/login')
+            return redirect('usuario/login')
 
     else:
         # Se a requisição for do GET, exibir o formulário de cadastro.
         form = UsuarioForm()
     return render(
         request,
-        'cadastro.html',
+        'usuario/cadastrar.html',
         {'form': form} 
     )
 
