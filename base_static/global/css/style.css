@@ -1,4 +1,4 @@
-/* Configurações Gerais*/
+/* Configurações Gerais */
 
 *{
     margin: 0;
@@ -15,7 +15,7 @@ body{
     color: #fff;
 }
 
-/*Estilização do Header*/
+/* Estilização do Header */
 
 .navbar{
     display: flex;
@@ -66,13 +66,13 @@ body{
 }
 
 
-/* Estilização do Footer*/
+/* Estilização do Footer */
 
 .footer {
     display: flex;
-    /* Usa o modelo de Layout flexível*/
+    /* Usa o modelo de Layout flexível */
     flex-wrap: wrap;
-    /* Permite que os elementos filhos quebrem linha( bom para resposividade)*/
+    /* Permite que os elementos filhos quebrem linha( bom para resposividade) */
     background-color: #111;
     color: #fff;
     justify-content: space-between;

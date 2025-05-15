@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect
-from sistema.models import Usuário
+
 from usuarios.forms import UsuarioForm
 
 # Create your views here.
@@ -30,15 +30,3 @@ def criarUsuario(request):
         {'form': form} 
     )
 
-def listarUsuarios(request):
-    usuarios = Usuário.objects.all()
-
-    context = {
-        'usuarios': usuarios 
-    }
-
-    return render(
-        request,
-        'usuarios/listar.html',
-        context,
-    )

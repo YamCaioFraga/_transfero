@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
@@ -14,5 +14,62 @@
         <button type="submit">Cadastrar</button>
 </form>
 
+</body>
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+</head>
+<body>
+    <main class="cadastro-body">
+        <div class="cadastro-container">
+            <h1>Welcome to our support page!</h1>
+            <p>We're here to help you with any problems you may be having with our product.</p>
+        </div>
+            <form action="POST" class="cadastro-form">
+                <p>Nome</p>
+                <input type="text" placeholder="Enter First Name" required>
+                <p>Sobrenome</p>
+                <input type="text" placeholder="Enter Last Name" required>
+                <p>Email</p>
+                <input type="email" placeholder="Enter your Email" required>
+                <p>Telefone</p>
+                <input type="number" placeholder="Enter Phone Number" required>
+                <p>CPF</p>
+                <input type="text" placeholder="Enter First Name">
+                <p>Senha</p>
+                <input type="password" placeholder="Enter Last Name">
+                <input type="checkbox" id="aceitar-termos">
+                <label class="aceitar-termos" for="aceitar-termos">I agree with Terms of Use and Privacy Policy</label>
+                <button class="btn-primary" type="submit">
+                    Cadastrar
+                </button>
+            </form>
+        <style>
+            body{
+                background-color:gray ;
+            }
+            .cadastro-body{
+                background-color: black;
+            }
+
+            .cadastro-container{
+                color: aliceblue;
+
+            }
+            .cadastro-form{
+                color: antiquewhite;
+                display: flex;
+                justify-content: center;
+                padding: 100px;
+            }
+        </style>
+    </main>
 </body>
 </html>
