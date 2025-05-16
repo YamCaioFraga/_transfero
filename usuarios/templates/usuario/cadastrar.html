@@ -17,8 +17,6 @@
 </body>
 </html> -->
 
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -31,43 +29,71 @@
         <div class="cadastro-container">
             <h1>Welcome to our support page!</h1>
             <p>We're here to help you with any problems you may be having with our product.</p>
+            <img src="C:\workspace\Projetos\project\base_static\global\assets\images\support-banner-image.jpg" alt="Imagem de Filmes">
         </div>
             <form action="POST" class="cadastro-form">
+                <div class="nome-sobrenome">
                 <p>Nome</p>
                 <input type="text" placeholder="Enter First Name" required>
                 <p>Sobrenome</p>
                 <input type="text" placeholder="Enter Last Name" required>
+                </div>
+                <div class="email-telefone">
                 <p>Email</p>
                 <input type="email" placeholder="Enter your Email" required>
                 <p>Telefone</p>
                 <input type="number" placeholder="Enter Phone Number" required>
+                </div>
+                <div class="cpf-senha">
                 <p>CPF</p>
                 <input type="text" placeholder="Enter First Name">
                 <p>Senha</p>
                 <input type="password" placeholder="Enter Last Name">
+                </div>
+                <div class="termos-cadastrar">
                 <input type="checkbox" id="aceitar-termos">
                 <label class="aceitar-termos" for="aceitar-termos">I agree with Terms of Use and Privacy Policy</label>
                 <button class="btn-primary" type="submit">
                     Cadastrar
-                </button>
+                </button>   
+                </div>
             </form>
         <style>
             body{
-                background-color:gray ;
+                background-color:lightblue ;
+               
             }
             .cadastro-body{
-                background-color: black;
+                margin: 300px;
+                display: flex;
+                align-items: center;
+                justify-content: center; display: grid;
+                grid-template-columns: 50% 50%;
             }
 
             .cadastro-container{
                 color: aliceblue;
-
+                text-align: center;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             }
+            
+            img{
+                width: 50px;
+                height: 100px;
+            }
+
             .cadastro-form{
                 color: antiquewhite;
-                display: flex;
-                justify-content: center;
-                padding: 100px;
+                background-color: black;
+                text-align: right;
+                display: grid;
+                grid-template-columns: 350px 1fr 1fr;
+                gap: 30px;
+               
+            }
+            
+            .nome-sobrenome{
+                border-radius: 8px;
             }
         </style>
     </main>
