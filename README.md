@@ -75,8 +75,9 @@ Editar
 pip install -r requirements.txt
 
 ⚙️ Configure o ambiente
-Crie um arquivo .env na raiz do projeto (caso esteja usando python-decouple, django-environ ou similar). Exemplo básico:
+Crie um arquivo .env na raiz do projeto (caso esteja usando python-decouple, django-environ ou similar).
 
+Exemplo básico:
 env
 Copiar
 Editar
